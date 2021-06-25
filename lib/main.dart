@@ -10,7 +10,7 @@ class CardApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      backgroundColor: Colors.teal,
+      backgroundColor: Colors.blue,
       body: SafeArea(
         child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -39,7 +39,7 @@ class CardApp extends StatelessWidget {
                   height: 20.0,
                   width: 150.0,
                   child: Divider(
-                    color: Colors.teal[100],
+                    color: Colors.blue[100],
                   )),
               Card(
                   margin:
@@ -50,12 +50,12 @@ class CardApp extends StatelessWidget {
                         EdgeInsets.symmetric(horizontal: 20, vertical: 1),
                     leading: Icon(
                       Icons.phone,
-                      color: Colors.teal,
+                      color: Colors.blue,
                       size: 25,
                     ),
                     title: Text("+91 890 545 1210",
                         style: TextStyle(
-                          color: Colors.teal,
+                          color: Colors.blue,
                           fontFamily: "SourceSansPro",
                           fontSize: 20,
                         )),
@@ -68,12 +68,12 @@ class CardApp extends StatelessWidget {
                           EdgeInsets.symmetric(horizontal: 20, vertical: 1),
                       leading: Icon(
                         Icons.mail,
-                        color: Colors.teal,
+                        color: Colors.blue,
                         size: 25,
                       ),
                       title: Text("198021@nith.ac.in",
                           style: TextStyle(
-                            color: Colors.teal,
+                            color: Colors.blue,
                             fontFamily: "SourceSansPro",
                             fontSize: 20,
                           ))))
