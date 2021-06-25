@@ -13,7 +13,7 @@ class CardApp extends StatelessWidget {
       backgroundColor: Colors.teal,
       body: SafeArea(
         child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 80.0,
@@ -22,18 +22,61 @@ class CardApp extends StatelessWidget {
               Text(
                 "Jatin Saini",
                 style: TextStyle(
-                  fontSize: 50.0,
+                  fontSize: 60.0,
                   fontFamily: 'Pacifico',
                   color: Colors.white,
                 ),
               ),
-              Text("Software Developer",
+              Text("SOFTWARE DEVELOPER",
                   style: TextStyle(
                     fontSize: 20.0,
-                    letterSpacing: 2.5,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1.5,
                     fontFamily: 'SourceSansPro',
                     color: Colors.white,
-                  ))
+                  )),
+              SizedBox(
+                  height: 20.0,
+                  width: 150.0,
+                  child: Divider(
+                    color: Colors.teal[100],
+                  )),
+              Card(
+                  margin:
+                      EdgeInsets.symmetric(horizontal: 40.0, vertical: 20.0),
+                  color: Colors.white,
+                  child: ListTile(
+                    contentPadding:
+                        EdgeInsets.symmetric(horizontal: 20, vertical: 1),
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                      size: 25,
+                    ),
+                    title: Text("+91 890 545 1210",
+                        style: TextStyle(
+                          color: Colors.teal,
+                          fontFamily: "SourceSansPro",
+                          fontSize: 20,
+                        )),
+                  )),
+              Card(
+                  margin: EdgeInsets.symmetric(horizontal: 40.0, vertical: 0.0),
+                  color: Colors.white,
+                  child: ListTile(
+                      contentPadding:
+                          EdgeInsets.symmetric(horizontal: 20, vertical: 1),
+                      leading: Icon(
+                        Icons.mail,
+                        color: Colors.teal,
+                        size: 25,
+                      ),
+                      title: Text("198021@nith.ac.in",
+                          style: TextStyle(
+                            color: Colors.teal,
+                            fontFamily: "SourceSansPro",
+                            fontSize: 20,
+                          ))))
             ]),
       ),
     ));
